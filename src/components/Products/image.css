@@ -1,0 +1,25 @@
+.image {
+  width: 400px;
+  object-fit: fill;
+  height: 400px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  filter: blur(10px);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform: scale(1.1); /* Увеличение изображения на 10% */
+  filter: grayscale(100%);
+}
+
+.image-loading {
+  width: 400px;
+  object-fit: fill;
+  height: 400px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  filter: blur(10px);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform: scale(1.1); /* Увеличение изображения на 10% */
+  filter: grayscale(100%);
+}
+
+
