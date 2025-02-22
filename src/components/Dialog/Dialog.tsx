@@ -1,7 +1,6 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import {
-  DialogActionTrigger,
   DialogBody,
   DialogCloseTrigger,
   DialogContent,
@@ -11,15 +10,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Toaster, toaster } from "@/components/ui/toaster";
-import {
-  Box,
-  Button,
-  Heading,
-  HStack,
-  Text,
-  Link,
-  createToaster,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, HStack, Text, Link } from "@chakra-ui/react";
 import { useRouter } from "nextjs-toploader/app";
 import { IProducts } from "@/Interface/Produc_iterfaces";
 import CustomImage from "../Image/Image";
@@ -32,7 +23,7 @@ const DialogComponent: FC<{ product: IProducts }> = ({ product }) => {
   };
 
   const addCart = () => {
-    const cart: any[] = JSON.parse(localStorage.getItem("cart") || "[]");
+    const cart: IProducts[] = JSON.parse(localStorage.getItem("cart") || "[]");
     const existingProductIndex = cart.findIndex(
       (item) => item.id === product.id
     );

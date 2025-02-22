@@ -1,11 +1,12 @@
 "use client";
 import { IProducts } from "@/Interface/Produc_iterfaces";
-import { Badge, Box, Flex, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Badge, Box, Text } from "@chakra-ui/react";
+
 import { FC } from "react";
 import "./image.css";
 import CustomImage from "../Image/Image";
 import { useRouter } from "nextjs-toploader/app";
+
 const Products: FC<{ product: IProducts }> = ({ product }) => {
   const router = useRouter();
   const property = {

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import * as Iconses from "react-icons/bi"; // Импортируем все иконки как объект
 import { useColorMode } from "@/components/ui/color-mode";

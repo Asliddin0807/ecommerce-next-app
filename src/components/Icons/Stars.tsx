@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Box, Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
+
 interface Props {
   rating: number;
   maxStars?: number;

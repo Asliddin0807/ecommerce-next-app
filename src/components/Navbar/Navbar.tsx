@@ -26,7 +26,6 @@ import { useColorMode } from "../ui/color-mode";
 import ColorModeToggle from "../Mode/Mode";
 
 export default function Navbar() {
-  const bg = "gray.800";
   const value = useBreakpointValue({ base: "mobile", md: "desktop" });
   const router = useRouter();
   const { toggleColorMode } = useColorMode();

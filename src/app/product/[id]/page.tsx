@@ -1,6 +1,6 @@
 import CustomImage from "@/components/Image/Image";
 import { IProducts } from "@/Interface/Produc_iterfaces";
-import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 
 export default async function ProductPage({
   params,
